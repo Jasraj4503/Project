@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* side navigation */
+.wrapper .sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 304px; */
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+}
+
+.fa-bars {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    color: white;
+    background-color: #149ddd;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+}
+
+.wrapper .sidenav .heading-1 {
+    color: white;
+    text-align-last: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Social-Media-Icons */
+.wrapper .sidenav .social-media{
+    text-align: center;
+    margin-top: 20px;
+}
+.wrapper .sidenav .social-media .icons {
+    font-size: 18px;
+    display: inline-block;
+    background-color: #212431;
+    color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    line-height: 1;
+    padding: 8px 0px;
+    transition: 0.3s;
+}
+
+.wrapper .sidenav .social-media .icons:hover {
+    background-color: #149ddd;
+    color: white;
+    transform: rotate(360deg);
+    text-decoration: none;
+}
+
+/* Navbar */
+.wrapper .sidenav ul {
+    margin-top: 50px;
+    margin-left: -18px;
+}
+
+.wrapper .sidenav ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.wrapper .sidenav ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.wrapper .sidenav ul li i {
+    font-size: 22px;
+    margin-right: 12px;
+}
+
+#navbar li a:hover {
+    color: white;
+}
+
+#navbar li a:hover i {
+    color: #149ddd;
+}
+
+/* Main-Content */
+.wrapper .main-content {
+    width: 80%;
+    margin-left: 20%;
+}
+
+section {
+    padding: 30px;
+}
+
+/*Home Scetion*/
+#Home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.techfunnel.com/wp-content/uploads/2017/12/7-Types-of-Hackers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.text {
+    width: 100%;
+    padding: 0 6vw;
+    margin-top: 200px;
+}
+
+.text1 {
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.text2 {
+    color: white;
+    font-size: 26px;
+    font-family: "poppins", sans-serif;
+}
+
+/*About Scetion*/
+#About {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #149ddd;
+    bottom: 0;
+    top: 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.img2{
+    height: 400px;
+    width: 350px;
+    background-image: url(Photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading-2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #173b6c;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#About ul {
+    list-style: none;
+    padding: 0;
+}
+
+#About ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#About ul i {
+    font-size: 16px;
+    color: #149ddd;
+    margin-right: 5px;
+}
+
+#About ul strong {
+    margin-right: 10px;
+}
+
+/*Skill section*/
+#Skill {
+    min-height: 60vh;
+    width: 100%;
+    background-color: #f5f8fd;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #149ddd;
+    bottom: 0;
+    top: 1;
+}
+
+
+/* FIRST SKILL */
+.prograss-bar {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.skill-name {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.skill-name .skill-score {
+    float: right;
+}
+
+.skill-range {
+    height: 10px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.skill-range .skill-marker {
+    height: 10px;
+    width: 80%;
+    background-color: #149ddd;
+}
+
+/* SECOND SKILL */
+.prograss-bar {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.skill-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.skill-range {
+    height: 10px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.skill-range .skill-marker {
+    height: 10px;
+    width: 70%;
+    background-color: #149ddd;
+}
+
+/* THIRD SKILL */
+.prograss-bar {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.skill-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.skill-range {
+    height: 10px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.skill-range .skill-marker {
+    height: 10px;
+    width: 50%;
+    background-color: #149ddd;
+}
+
+/* FOURTH SKILL */
+.prograss-bar {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.skill-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.skill-range {
+    height: 10px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.skill-range .skill-marker {
+    height: 10px;
+    width: 10%;
+    background-color: #149ddd;
+}
+
+/* FIFTH SKILL */
+.prograss-bar {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.skill-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.skill-range {
+    height: 10px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.skill-range .skill-marker {
+    height: 10px;
+    width: 75%;
+    background-color: #149ddd;
+    animation: progress 1.2s linear forwards;
+}
+
+.skill-marker.HTML {
+    width: 80%;
+}
+
+.skill-marker.CSS {
+    width: 70%;
+}
+
+.skill-marker.JQUERY {
+    width: 50%;
+}
+
+.skill-marker.JAVASCRIPT {
+    width: 10%;
+}
+
+.skill-marker.BOOTSTRAP {
+    width: 75%;
+}
+
+@keyframes progress {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Resume section*/
+#Resume {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: #149ddd;
+    bottom: 0;
+    top: 1;
+}
+
+.row {
+    display: flex;
+}
+
+.resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #050d18;
+}
+
+.resume-item {
+    padding: 0 0 1px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.resume-item::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background-color: white;
+    border: 2px solid #1f5297;
+}
+.resume-item h4{
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin-bottom: 10px;
+}
+.text4{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.resume-item ul{
+    padding-left: 20px;
+}
+.resume-item ul li{
+    padding-bottom: 10px;
+}
+.resume-item h5{
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/*Portfolio section*/
+#Portfolio {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f5f8fd;
+}
+.img3{
+    height: 45vw;
+    width: 100%;
+    background-image: url(PSD\ File\ Photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Contact section*/
+#Contact {
+    min-height: 100vh;
+    width: 100%;
+}
+.info{
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.info i{
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: #dff3fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.address:hover i{
+    color: white;
+    background: #149ddd;
+}
+.text5{
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+}
+.text6{
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #173b6c;
+}
+.email:hover i{
+    color: white;
+    background: #149ddd;
+}
+.call:hover i{
+    color: white;
+    background: #149ddd;
+}
+
+.form{
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.form .form-group{
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+label{
+    padding-bottom: 8px;
+}
+.form input{
+    height: 44px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+.form button[type=submit]{
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s;   
+}
+.form button[type=submit]:hover{
+    opacity: 0.7;
+}
+@media screen and (max-width:480px){
+    .wrapper .sidenav{
+        left: -304px;
+        z-index: 999;
+        width: 45%;
+        transition: 1s ease;
+    }
+    .sidenav.active{
+        left: 0px;
+    }
+    .wrapper .main-content{
+        width: 100%;
+        margin-left: 0px;
+    }
+    #Home {
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(https://www.techfunnel.com/wp-content/uploads/2017/12/7-Types-of-Hackers.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left 20%;
+    }
+    .text1 {
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    #About {
+        min-height: 100vh;
+        width: 100%;
+    }
+    #Skill {
+        min-height: 60vh;
+        width: 100%;
+        background-color: #f5f8fd;
+    }
+    #Resume {
+        min-height: 100vh;
+        width: 100%;
+    }
+    #Portfolio{
+        min-height: 20vh;
+        width: 100%;
+    }
+    #Contact {
+        min-height: 100vh;
+        width: 100%;
+    }
+    .info{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:481px) and (max-width:799px){
+    .wrapper .sidenav{
+        left: -304px;
+        z-index: 999;
+        width: 35%;
+        transition: 1s ease;
+    }
+    .sidenav.active{
+        left: 0px;
+    }
+    .wrapper .main-content{
+        width: 100%;
+        margin-left: 0px;
+    }#Home {
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(https://www.techfunnel.com/wp-content/uploads/2017/12/7-Types-of-Hackers.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left 20%;
+    }
+    .text1 {
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    #About {
+        min-height: 100vh;
+        width: 100%;
+    }
+    #Skill {
+        min-height: 60vh;
+        width: 100%;
+        background-color: #f5f8fd;
+    }
+    #Resume {
+        min-height: 100vh;
+        width: 100%;
+    }
+    #Portfolio{
+        min-height: 50px;
+        width: 100%;
+    }
+    #Contact{
+        min-height: 100vh;
+        width: 100%;
+    }
+    .info{
+        margin-bottom: 20px;
+    }
+}
